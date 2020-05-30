@@ -12,13 +12,12 @@
     <title>akdmia - coachs de programacion</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}">
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/fontawesome.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/templatemo-finance-business.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/owl.css')}}">
   </head>
 
   <body>
@@ -58,7 +57,7 @@
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a href="index.html"><img class = "logo" src="assets/images/logo.png"></a>
+          <a href="index.html"><img class = "logo" src="../static/assets/images/logo.png"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -154,7 +153,7 @@
           </div>
           <div class="col-md-4">
             <div class="service-item">
-              <img src="assets/images/service_01.jpg" alt="">
+              <img src="../static/assets/images/service_01.jpg" alt="">
               <div class="down-content">
                 <h4>Digital Currency</h4>
                 <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p>
@@ -164,7 +163,7 @@
           </div>
           <div class="col-md-4">
             <div class="service-item">
-              <img src="assets/images/service_02.jpg" alt="">
+              <img src="../static/assets/images/service_02.jpg" alt="">
               <div class="down-content">
                 <h4>Market Analysis</h4>
                 <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p>
@@ -174,7 +173,7 @@
           </div>
           <div class="col-md-4">
             <div class="service-item">
-              <img src="assets/images/service_03.jpg" alt="">
+              <img src="../static/assets/images/service_03.jpg" alt="">
               <div class="down-content">
                 <h4>Historical Data</h4>
                 <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p>
@@ -238,7 +237,7 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="left-image">
-                    <img src="assets/images/more-info.jpg" alt="">
+                    <img src="../static/assets/images/more-info.jpg" alt="">
                   </div>
                 </div>
                 <div class="col-md-6 align-self-center">
@@ -363,23 +362,23 @@
             <div class="owl-partners owl-carousel">
             
               <div class="partner-item">
-                <img src="assets/images/client-01.png" title="1" alt="1">
+                <img src="../static/assets/images/client-01.png" title="1" alt="1">
               </div>
               
               <div class="partner-item">
-                <img src="assets/images/client-01.png" title="2" alt="2">
+                <img src="../static/assets/images/client-01.png" title="2" alt="2">
               </div>
               
               <div class="partner-item">
-                <img src="assets/images/client-01.png" title="3" alt="3">
+                <img src="../static/assets/images/client-01.png" title="3" alt="3">
               </div>
               
               <div class="partner-item">
-                <img src="assets/images/client-01.png" title="4" alt="4">
+                <img src="../static/assets/images/client-01.png" title="4" alt="4">
               </div>
               
               <div class="partner-item">
-                <img src="assets/images/client-01.png" title="5" alt="5">
+                <img src="../static/assets/images/client-01.png" title="5" alt="5">
               </div>
               
             </div>
@@ -467,14 +466,14 @@
     </div>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+    <script src="{{url_for('static', filename='vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    
     <!-- Additional Scripts -->
-    <script src="assets/js/custom.js"></script>
-    <script src="assets/js/owl.js"></script>
-    <script src="assets/js/slick.js"></script>
-    <script src="assets/js/accordions.js"></script>
+    <script src="{{url_for('static', filename='assets/js/custom.js')}}"></script>
+    <script src="{{url_for('static', filename='assets/js/owl.js')}}"></script>
+    <script src="{{url_for('static', filename='assets/js/slick.js')}}"></script>
+    <script src="{{url_for('static', filename='assets/js/accordions.js')}}"></script>
 
     <script language = "text/Javascript"> 
       cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
