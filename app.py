@@ -28,7 +28,7 @@ def formSent():
         email = request.form.get("email")
         content = request.form.get("message")
         print(content)
-        msg = Message(content,sender="andreskammerath@gmail.com",
+        msg = Message(subject="Mensaje desde akdemia.es",body=content,sender="andreskammerath@gmail.com",
                   recipients=["andreskammerath@gmail.com"])
         mail.send(msg)
     return redirect("/")
