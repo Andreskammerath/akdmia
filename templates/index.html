@@ -64,7 +64,50 @@
         <div class="row">
           <div class="col-md-12">
             <div class="section-heading">
-              <h2>Cursos<em> Manos a la obra</em></h2>
+              <h2>Apoyo<em> Universitario y Escolar</em></h2>
+              <span>Consigue un gran profe y mejora tu rendimiento académico</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="../static/assets/images/matematica.jpg" alt="">
+              <div class="down-content">
+                <h4>Matemáticas</h4>
+                <p>Recibe apoyo escolar en matemáticas de primaria, E.S.O, bachillerato y universitario.</p>
+                <a href="{{ url_for('contact') }}" class="filled-button">Consulta ahora</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="../static/assets/images/programacion.jpg" alt="">
+              <div class="down-content">
+                <h4>Programación</h4>
+                <p>Recibe apoyo en tu proyecto o tarea de programación de la mano de un experimentado profe.</p>
+                <a href="{{ url_for('contact') }}" class="filled-button">Consulta ahora</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="../static/assets/images/ingles.jpg" alt="">
+              <div class="down-content">
+                <h4>Inglés</h4>
+                <p>Mejora tu inglés, pasa tus exámenes e incluso preparate para una certificación internacional con clases personalizadas.</p>
+                <a href="{{ url_for('contact') }}" class="filled-button">Consulta ahora</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Cursos<em> Manos a la obra</em> Programación</h2>
               <span>Aprende conceptos, estructuras de datos y algoritmos con proyectos reales y comerciales</span>
             </div>
           </div>
@@ -74,7 +117,7 @@
               <div class="down-content">
                 <h4>Detector de caras</h4>
                 <p>En este curso creareis un script que procesará imagenes y recuadrará el rostro de las personas presentes en la imagen, aprendereis sobre listas, librerías, diccionarios y utilizareis una red neuronal para reconocer las caras.</p>
-                <a href="" class="filled-button">Apuntate ahora</a>
+                <a href="{{ url_for('contact') }}" class="filled-button">Apuntate ahora</a>
               </div>
             </div>
           </div>
@@ -84,7 +127,7 @@
               <div class="down-content">
                 <h4>Juego 2048</h4>
                 <p>Este popular juego es un gran proyecto para aprender sobre bucles, estructuras de datos, lógica, Git control de versiones y muchos más.</p>
-                <a href="" class="filled-button">Apuntate ahora</a>
+                <a href="{{ url_for('contact') }}" class="filled-button">Apuntate ahora</a>
               </div>
             </div>
           </div>
@@ -94,7 +137,7 @@
               <div class="down-content">
                 <h4>Juego de países y capitales</h4>
                 <p>Diviertete creando un entretenido juego interactivo donde aprenderás sobre estructuras de datos, bucles, I/O y mucho más.</p>
-                <a href="" class="filled-button">Apuntate ahora</a>
+                <a href="{{ url_for('contact') }}" class="filled-button">Apuntate ahora</a>
               </div>
             </div>
           </div>
@@ -109,7 +152,7 @@
             <div class="left-content">
               <!--<span>Lorem ipsum dolor sit amet</span>-->
               <h2>DATOS SOBRE<em> NOSOTROS</em></h2>
-              <p>Nuestra compañía está compuesta por programadores que se desarrollan en la industria y se involucran en la docencia porque disfrutan transmitir su conocimiento.</p>
+              <p>En nuestro rubro las personas lo son todo por eso seleccionamos a los mejores profes para incorporar a nuestros equipos de trabajo.</p>
              <!--<a href="" class="filled-button">Read More</a>-->
             </div>
           </div>
@@ -136,7 +179,7 @@
               <div class="col-md-6">
                 <div class="count-area-content">
                   <div class="count-digit">1</div>
-                  <div class="count-title">instructores de la industria</div>
+                  <div class="count-title">profe</div>
                 </div>
               </div>
             </div>
@@ -176,8 +219,8 @@
         <div class="row">
           <div class="col-md-12">
             <div class="section-heading">
-              <h2>Lo que dicen de<em> nuestros instructores</em></h2>
-              <span>Feedback de estudiantes</span>
+              <h2>Lo que dicen de<em> nuestros profes</em></h2>
+              <span>Reseñas de estudiantes</span>
             </div>
           </div>
           <div class="col-md-12">
@@ -185,38 +228,50 @@
               
               <div class="testimonial-item">
                 <div class="inner-content">
-                  <h4>George Walker</h4>
-                  <span>Chief Financial Analyst</span>
-                  <p>"Nulla ullamcorper, ipsum vel condimentum congue, mi odio vehicula tellus, sit amet malesuada justo sem sit amet quam. Pellentesque in sagittis lacus."</p>
+                  <h4>Clara</h4>
+                  <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                  <p>Trato excelente! Super agradable y muy dispuesto. :)</p>
                 </div>
-                <img src="http://placehold.it/60x60" alt="">
               </div>
               
               <div class="testimonial-item">
                 <div class="inner-content">
-                  <h4>John Smith</h4>
-                  <span>Market Specialist</span>
-                  <p>"In eget leo ante. Sed nibh leo, laoreet accumsan euismod quis, scelerisque a nunc. Mauris accumsan, arcu id ornare malesuada, est nulla luctus nisi."</p>
+                  <h4>Noelia</h4>
+                  <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                  <p>Profesor altamente recomendable. Gran conocimiento en la materia y muy cercano al alumno. Muestra gran profesionalidad y se implica mucho en el proyecto del alumno.</p>
                 </div>
-                <img src="http://placehold.it/60x60" alt="">
               </div>
               
               <div class="testimonial-item">
                 <div class="inner-content">
-                  <h4>David Wood</h4>
-                  <span>Chief Accountant</span>
-                  <p>"Ut ultricies maximus turpis, in sollicitudin ligula posuere vel. Donec finibus maximus neque, vitae egestas quam imperdiet nec. Proin nec mauris eu tortor consectetur tristique."</p>
+                  <h4>Luis Alejandro</h4>
+                  <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                  <p>Muy buen profesional y muy flexible al ritmo de aprendizaje del alumno.</p>
                 </div>
-                <img src="http://placehold.it/60x60" alt="">
               </div>
               
               <div class="testimonial-item">
                 <div class="inner-content">
-                  <h4>Andrew Boom</h4>
-                  <span>Marketing Head</span>
-                  <p>"Curabitur sollicitudin, tortor at suscipit volutpat, nisi arcu aliquet dui, vitae semper sem turpis quis libero. Quisque vulputate lacinia nisl ac lobortis."</p>
+                  <h4>José Luis</h4>
+                  <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                  <p>Excepcional profesor, muy implicado con el aprendizaje del alumno. </p>
                 </div>
-                <img src="http://placehold.it/60x60" alt="">
+              </div>
+
+              <div class="testimonial-item">
+                <div class="inner-content">
+                  <h4>Pablo</h4>
+                  <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                  <p>Muy buena dedicación e implicación además de ser didáctico</p>
+                </div>
+              </div>
+
+              <div class="testimonial-item">
+                <div class="inner-content">
+                  <h4>Juan Cruz</h4>
+                  <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                  <p>Excelente profe, con mucha predisposición.</p>
+                </div>
               </div>
               
             </div>
@@ -230,8 +285,8 @@
         <div class="row">
           <div class="col-md-12">
             <div class="section-heading">
-              <h2>Request a <em>call back</em></h2>
-              <span>Etiam suscipit ante a odio consequat</span>
+              <h2>Envianos<em> un mensaje</em></h2>
+              <span>Estaremos felices de ayudarte.</span>
             </div>
           </div>
           <div class="col-md-12">
@@ -277,7 +332,7 @@
           <div class="col-md-12">
             <div class="owl-partners owl-carousel">
             
-              <div class="partner-item">
+              <!--<div class="partner-item">
                 <img src="../static/assets/images/client-01.png" title="1" alt="1">
               </div>
               
@@ -295,7 +350,7 @@
               
               <div class="partner-item">
                 <img src="../static/assets/images/client-01.png" title="5" alt="5">
-              </div>
+              </div>-->
               
             </div>
           </div>
