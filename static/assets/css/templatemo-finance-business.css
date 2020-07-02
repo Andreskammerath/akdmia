@@ -37,6 +37,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f1eeee !important;
 }
 p {
     margin-bottom: 0px;
@@ -415,15 +416,15 @@ header .navbar {
 }
 
 .Modern-Slider .item-1 .img-fill {
-    background-image: url(../images/slide_01.jpg);
+    background-image: url(../images/math.jpg);
 }
 
 .Modern-Slider .item-2 .img-fill {
-    background-image: url(../images/slide_02.jpg);
+    background-image: url(../images/progr.jpg);
 }
 
 .Modern-Slider .item-3 .img-fill {
-    background-image: url(../images/slide_03.jpg);
+    background-image: url(../images/ingles.jpg);
 }
 
 .Modern-Slider .NextArrow{
@@ -580,7 +581,7 @@ ul.slick-dots {
 }
 
 .service-item .down-content {
-    background-color: #f7f7f7;
+    background-color: #dbdbdb;
     padding: 30px;
 }
 
@@ -673,7 +674,7 @@ ul.slick-dots {
 }
 
 .more-info .more-info-content {
-    background-color: #f7f7f7;
+    background-color: #dbdbdb;
 }
 
 .about-info .more-info-content {
@@ -722,7 +723,7 @@ ul.slick-dots {
 
 .testimonials {
     margin-top: 140px;
-    background-color: #f7f7f7;
+    background-color: #dbdbdb;
     padding: 140px 0px;
 }
 .testimonial-item .inner-content {
@@ -766,7 +767,7 @@ ul.slick-dots {
 }
 
 .contact-us {
-    background-color: #f7f7f7;
+    background-color: #dbdbdb;
     padding: 140px 0px;
 }
 
@@ -891,7 +892,7 @@ ul.slick-dots {
 
 .partners {
     margin-top: 140px;
-    background-color: #f7f7f7;
+    background-color: #dbdbdb;
     padding: 60px 0px;
 }
 
@@ -1102,7 +1103,7 @@ footer .contact-form button.filled-button:hover {
 /* team */
 
 .team {
-    background-color: #f7f7f7;
+    background-color: #dbdbdb;
     margin-top: 140px;
     margin-bottom: -140px;
     padding: 120px 0px;
@@ -1217,7 +1218,7 @@ footer .contact-form button.filled-button:hover {
 
 .contact-information .contact-item {
     padding: 60px 30px;
-    background-color: #f7f7f7;
+    background-color: #dbdbdb;
     text-align: center;
 }
 

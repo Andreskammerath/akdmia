@@ -28,9 +28,25 @@ def formSent():
         email = request.form.get("email")
         content = request.form.get("message")
         print(content)
-        msg = Message(subject="Mensaje desde akdemia.es",body=content,sender="andreskammerath@gmail.com",
-                  recipients=["andreskammerath@gmail.com"])
+        msg = Message(subject="Mensaje desde akdemia.es",body=content + " - remitente: "+email ,sender="andreskammerath@gmail.com",
+                  recipients=[app.config['MAIL_USERNAME'],"torres.luciana1941@gmail.com"])
+        msg2 = Message(subject="Correo recibido en akdemia.es",body="Gracias por escribirnos. Muy pronto nos contactaremos.",sender="andreskammerath@gmail.com",
+                  recipients=[email])
         mail.send(msg)
+        mail.send(msg2)
     return redirect("/")
+
+@app.route("/services")
+def services():
+    return render_template("services.html")
+
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
+
+@app.route("/about")
+def about():
+    return render_template("about.html")
+
 if __name__ == '__main__':
     app.run()
